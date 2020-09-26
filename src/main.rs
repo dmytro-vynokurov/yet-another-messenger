@@ -1,6 +1,7 @@
 use actix_web::{web, App, HttpResponse, HttpServer, Responder};
 
 async fn index() -> impl Responder {
+    println!("Hello");
     HttpResponse::Ok().body("Hello world!")
 }
 
