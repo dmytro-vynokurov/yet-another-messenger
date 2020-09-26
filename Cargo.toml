@@ -1,0 +1,16 @@
+[package]
+name = "backend"
+version = "0.1.0"
+authors = ["Dmytro Vynokurov <dmytro.vynokurov@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[build]
+#rustflags = "-C target-feature=-crt-static"
+target = "x86_64-unknown-linux-musl"
+
+[dependencies]
+actix-web = "2.0"
+actix-rt = "1.0"
